@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    background-color: rgba(84, 40, 251, 0.95);
+    background-image: linear-gradient(159deg, rgba(89, 131, 252, 1) 30%, rgba(41, 53, 86, 1) 100%),  url();
+    background-repeat: repeat;
+    width: 425px;
+    height: 550px;
+    border-radius: 1%;
+    display: flex;
+    flex-direction: column;
+    hr{
+        border: solid 1px black;
+    }
+    .previous{
+        width: 100%;
+        height: 8%;
+        display: flex;
+        align-items: center;
+        p{
+            width: auto;
+        }
+    }
+    .current{
+        width: 100%;
+        height: 8%;
+        display: flex;
+        align-items: center;
+    }
+    #calc{
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin-top: 30px;
+        #calc_number{
+            width: 60%;
+            height: 250px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            #zero{
+                grid-row: 4;
+                grid-column: 2;
+            } 
+            button{
+                font-size: 25px;
+                font-weight: bold;
+                margin: 5px;
+                width: 70px;
+                height: 50px;
+                border: none;
+                border-radius: 10%;
+                cursor: pointer;
+                transition: 0.5s ease;
+            }
+            button:hover{
+                transform: scale(1.1);
+                font-size: 28px;
+            }
+        }
+        #calc_sign{
+            margin-top: 25px;
+            width: 40%;
+            margin-right: 8px;
+            margin-left: 20px;
+            height: 160px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            button{
+                font-size: 15px;
+                font-weight: bold;
+                width: 50px;
+                height: 35px;
+                padding: 3px;
+                border: none;
+                border-radius: 10%;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+            #dot{
+                grid-row: 4;
+                grid-column: 2;
+            }
+            #equal{
+                grid-row: 4;
+                grid-column: 3;
+            }
+        }
+    }
+    button{
+        -webkit-box-shadow: 8px 8px 58px -14px rgba(66, 68, 90, 1);
+-moz-box-shadow: 8px 8px 58px -14px rgba(66, 68, 90, 1);
+box-shadow: 8px 8px 58px -14px rgba(66, 68, 90, 1);
+    }
+    button:hover{
+        background: rgba(#000000, 0.2);
+    }
+}

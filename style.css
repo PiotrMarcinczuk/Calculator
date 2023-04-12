@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+main {
+  background-color: rgba(84, 40, 251, 0.95);
+  background-image: linear-gradient(159deg, rgb(89, 131, 252) 30%, rgb(41, 53, 86) 100%), url();
+  background-repeat: repeat;
+  width: 425px;
+  height: 550px;
+  border-radius: 1%;
+  display: flex;
+  flex-direction: column;
+}
+main hr {
+  border: solid 1px black;
+}
+main .previous {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+}
+main .previous p {
+  width: auto;
+}
+main .current {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+}
+main #calc {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 30px;
+}
+main #calc #calc_number {
+  width: 60%;
+  height: 250px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+main #calc #calc_number #zero {
+  grid-row: 4;
+  grid-column: 2;
+}
+main #calc #calc_number button {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 5px;
+  width: 70px;
+  height: 50px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+main #calc #calc_number button:hover {
+  transform: scale(1.1);
+  font-size: 28px;
+}
+main #calc #calc_sign {
+  margin-top: 25px;
+  width: 40%;
+  margin-right: 8px;
+  margin-left: 20px;
+  height: 160px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+main #calc #calc_sign button {
+  font-size: 15px;
+  font-weight: bold;
+  width: 50px;
+  height: 35px;
+  padding: 3px;
+  border: none;
+  border-radius: 10%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+main #calc #calc_sign #dot {
+  grid-row: 4;
+  grid-column: 2;
+}
+main #calc #calc_sign #equal {
+  grid-row: 4;
+  grid-column: 3;
+}
+main button {
+  box-shadow: 8px 8px 58px -14px rgb(66, 68, 90);
+}
+main button:hover {
+  background: rgba(0, 0, 0, 0.2);
+}/*# sourceMappingURL=style.css.map */
