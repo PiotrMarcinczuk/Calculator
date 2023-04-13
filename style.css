@@ -17,7 +17,7 @@ main {
   background-color: rgba(84, 40, 251, 0.95);
   background-image: linear-gradient(159deg, rgb(89, 131, 252) 30%, rgb(41, 53, 86) 100%), url();
   background-repeat: repeat;
-  width: 425px;
+  width: 400px;
   height: 550px;
   border-radius: 1%;
   display: flex;
@@ -33,6 +33,7 @@ main .previous {
   align-items: center;
 }
 main .previous p {
+  font-size: 22px;
   width: auto;
 }
 main .current {
@@ -44,20 +45,11 @@ main .current {
 main #calc {
   width: 100%;
   height: auto;
-  display: flex;
-  margin-top: 30px;
-}
-main #calc #calc_number {
-  width: 60%;
-  height: 250px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  margin-top: 30px;
+  grid-template-columns: repeat(3, 1fr);
 }
-main #calc #calc_number #zero {
-  grid-row: 4;
-  grid-column: 2;
-}
-main #calc #calc_number button {
+main #calc button {
   font-size: 25px;
   font-weight: bold;
   margin: 5px;
@@ -67,42 +59,34 @@ main #calc #calc_number button {
   border-radius: 10%;
   cursor: pointer;
   transition: 0.5s ease;
+  grid-row: span 1;
+  grid-column: span;
 }
-main #calc #calc_number button:hover {
-  transform: scale(1.1);
+main #calc button:hover {
+  transform: scale(1.05);
   font-size: 28px;
 }
-main #calc #calc_sign {
-  margin-top: 25px;
-  width: 40%;
-  margin-right: 8px;
-  margin-left: 20px;
-  height: 160px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-main #calc #calc_sign button {
-  font-size: 15px;
-  font-weight: bold;
-  width: 50px;
-  height: 35px;
-  padding: 3px;
-  border: none;
-  border-radius: 10%;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-main #calc #calc_sign #dot {
-  grid-row: 4;
+main #calc #zero {
+  grid-row: 7;
   grid-column: 2;
 }
-main #calc #calc_sign #equal {
-  grid-row: 4;
+main #calc #dot {
+  grid-row: 7;
+  grid-column: 1;
+}
+main #calc .equal {
+  grid-row: 7;
   grid-column: 3;
 }
-main button {
+main #calc .sign {
+  font-size: 20px;
+}
+main #calc .sign:hover {
+  font-size: 20px;
+}
+main #calc button {
   box-shadow: 8px 8px 58px -14px rgb(66, 68, 90);
 }
-main button:hover {
+main #calc button:hover {
   background: rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=style.css.map */
