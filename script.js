@@ -65,18 +65,22 @@ function operate(){
                 p_previous.textContent += current_operator;
             }   
         }else{ 
-            if(this.textContent && !p_previous.textContent.includes(this.textContent)){ // tu moga byc problemy z bardziej zlozonymi dzialaniami
+            if(!p_previous.textContent.includes(this.textContent)){ // tu moga byc problemy z bardziej zlozonymi dzialaniami
                 console.log(this.textContent);
                 console.log(current_operator)
                 console.log(432534534);
-                console.log('piewrszy math'); //cos tu
+                console.log('piewrszy math'); 
                 math(current_operator); // wczesniej poprostu math bez ifas
                 p_previous.textContent += this.textContent;
             }else if(!p_previous.textContent.includes('=')){// dodane warunek if wczesniej samo else
                 console.log('drugi math');
                 math(current_operator);
-            p_previous.textContent += current_operator;
-            current_number = parseFloat(p_previous.textContent);   
+                p_previous.textContent += current_operator;
+                current_number = parseFloat(p_previous.textContent);   
+            }
+            else{
+                math(current_operator);
+
             }
         }
         p_current.textContent = '';
@@ -102,6 +106,7 @@ function operate(){
 }
 
 function math(current_operator){
+    let temp = 0;
     switch(current_operator){
         case '+':
             if(p_previous.textContent.includes('=')){ // ty '=' byla nie wiem dlaczego
@@ -132,7 +137,8 @@ function math(current_operator){
             }
             break; 
         case '*':
-            console.log(parseFloat(p_previous.textContent));
+            temp = p_previous.textContent;
+            //mnozenie 4*5 = 20 i potem * nie dziala tu trzeba zastosowac jakiegos ifa ktory bedzie sprawdzial czy jest znak = w p_previosu.
             p_previous.textContent = parseFloat(p_previous.textContent) * parseFloat(p_current.textContent);
             if(p_current.textContent.includes('.')){
                 p_previous.textContent = parseFloat(p_previous.textContent).toFixed(3)
@@ -183,6 +189,9 @@ function math_for_equal(current_operator){
             }
             break; 
         case '-':
+            // kiedy pierwsza liczba zaczyna sie od -8 to zle mnozy
+            // bugi z '+/-'
+            // czasem niepoprawne operacje
             temp = p_previous.textContent
             p_previous.textContent = temp + p_current.textContent + '=';
             p_current.textContent = parseFloat(temp) - parseFloat(p_current.textContent);
@@ -203,7 +212,7 @@ function math_for_equal(current_operator){
             }   
             if(p_current.textContent.includes('-')){
                 console.log('zamiana * -1');
-                p_current.textContent = parseFloat(p_current.textContent).toFixed(3) * -1;
+                p_current.textContent = parseFloat(p_current.textContent);
             }
             break; 
         case '/':
@@ -215,7 +224,7 @@ function math_for_equal(current_operator){
             }   
             if(p_current.textContent.includes('-')){
                 console.log('zamiana * -1');
-                p_current.textContent = parseFloat(p_current.textContent).toFixed(3) * -1;
+                p_current.textContent = parseFloat(p_current.textContent);
             }
             break;
     }
