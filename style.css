@@ -13,6 +13,7 @@ body {
   align-items: center;
   height: 100vh;
   z-index: 999;
+  overflow-y: hidden;
 }
 
 main {
@@ -64,6 +65,7 @@ main #calculator #calc_buttons {
   display: grid;
   margin-top: 50px;
   grid-template-columns: repeat(3, 1fr);
+  overflow-y: hidden;
 }
 main #calculator #calc_buttons button {
   padding: 0;
