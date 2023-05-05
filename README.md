@@ -16,5 +16,5 @@ is PHP, because I using PHPmailer to forms on side.
 
 
 
-## 🔗 http://calculator1.lovestoblog.com/
+## 🔗 https://calculator1.lovestoblog.com/
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/piotr-marci%C5%84czuk-648055268)
