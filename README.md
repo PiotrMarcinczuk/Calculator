@@ -13,3 +13,7 @@ from which our result was created.<br>
 Apart from mathematical symbols we also have "C" button and "UNDO" button. First remove all contents from calculator, second remove only last sign which we put in calculator.
 I thought this calculator is ready for upload to public side with readme, but I know there are bugs on it, that is why I put on side contact form, which make it easier search any bug for me.
 
+
+
+## 🔗 http://calculator1.lovestoblog.com/
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/piotr-marci%C5%84czuk-648055268)
