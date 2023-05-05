@@ -11,7 +11,8 @@ Second way is operation with equal sign, for example I clicked again sequence "5
 from which our result was created.<br>
 <img src="readme files/calc3.PNG" width="200"><br>
 Apart from mathematical symbols we also have "C" button and "UNDO" button. First button remove all contents from calculator, second button remove only last sign which we put in calculator.
-I thought this calculator is ready for upload to public side with readme, but I know there are bugs on it, that is why I put on side contact form, which make it easier search any bug for me.
+I think this calculator is ready for upload to public side with readme, but I know there are bugs on it, that is why I put on side contact form, which make it easier search any bug for me. Most part of the code
+is PHP, because I using PHPmailer to forms on side.
 
 
 
