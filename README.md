@@ -10,7 +10,7 @@ depending on the clicked sign. For example I clicked in sequence "55", "+", "11"
 Second way is operation with equal sign, for example I clicked again sequence "55", "+", "11", but now instead "+" I was click "=" and we get result in bottom section and components
 from which our result was created.<br>
 <img src="readme files/calc3.PNG" width="200"><br>
-Apart from mathematical symbols we also have "C" button and "UNDO" button. First remove all contents from calculator, second remove only last sign which we put in calculator.
+Apart from mathematical symbols we also have "C" button and "UNDO" button. First button remove all contents from calculator, second button remove only last sign which we put in calculator.
 I thought this calculator is ready for upload to public side with readme, but I know there are bugs on it, that is why I put on side contact form, which make it easier search any bug for me.
 
 
